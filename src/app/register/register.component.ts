@@ -17,12 +17,11 @@ import { FormErrorsComponent } from '../shared/ui/form-errors';
 import { TypedFormGroup } from '../shared/utils';
 
 @Component({
-  selector: 'app-register',
-  standalone: true,
-  imports: [ReactiveFormsModule, FormErrorsComponent, RouterLink],
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-register',
+    imports: [ReactiveFormsModule, FormErrorsComponent, RouterLink],
+    templateUrl: './register.component.html',
+    styleUrls: ['./register.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export default class RegisterComponent implements OnDestroy {
   readonly #authStore = inject(AuthStore);

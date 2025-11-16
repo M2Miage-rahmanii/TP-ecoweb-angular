@@ -7,12 +7,11 @@ import { UpdateCurrentUserBodyRequest } from '../shared/services';
 import { AuthStore } from '../shared/store';
 import { TypedFormGroup } from '../shared/utils';
 @Component({
-  selector: 'app-setting',
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  templateUrl: './setting.component.html',
-  styleUrls: ['./setting.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-setting',
+    imports: [ReactiveFormsModule],
+    templateUrl: './setting.component.html',
+    styleUrls: ['./setting.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export default class SettingComponent implements OnInit {
   readonly #authStore = inject(AuthStore);

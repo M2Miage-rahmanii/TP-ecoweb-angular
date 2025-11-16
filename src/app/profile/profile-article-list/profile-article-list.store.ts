@@ -1,7 +1,8 @@
 import { ViewportScroller } from '@angular/common';
 import { inject, Injectable } from '@angular/core';
-import { OnStoreInit, tapResponse } from '@ngrx/component-store';
+import { OnStoreInit } from '@ngrx/component-store';
 import { defer, exhaustMap, switchMap, tap } from 'rxjs';
+import { tapResponse } from '../../shared/utils/tap-response.operator';
 import { Article } from 'src/app/shared/models';
 import { ArticleService } from 'src/app/shared/services';
 import { ComponentStoreWithSelectors } from 'src/app/shared/utils';
@@ -38,7 +39,7 @@ export class ProfileArticleListStore
     articleType: ArticleType;
     offset: number;
   }>(
-    tap((request) => {
+    tap((request: { username: string; articleType: ArticleType; offset: number }) => {
       this.patchState({
         username: request.username,
         articleType: request.articleType,
@@ -67,13 +68,13 @@ export class ProfileArticleListStore
         })
         .pipe(
           tapResponse(
-            (response) => {
+            (response: any) => {
               this.patchState({
                 articleCount: response.articlesCount,
                 articleList: response.articles,
               });
             },
-            (error) => {
+            (error: any) => {
               console.error('Get Article Failed', error);
             }
           )
@@ -94,7 +95,7 @@ export class ProfileArticleListStore
           () => {
             this.#refreshPage();
           },
-          (error) => {
+          (error: any) => {
             console.error('Toggle Favorite Failed', error);
           }
         )

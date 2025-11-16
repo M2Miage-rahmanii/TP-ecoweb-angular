@@ -1,8 +1,9 @@
 import { inject, Injectable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { OnStoreInit, tapResponse } from '@ngrx/component-store';
+import { OnStoreInit } from '@ngrx/component-store';
 import { defer, exhaustMap, switchMap } from 'rxjs';
+import { tapResponse } from '../shared/utils/tap-response.operator';
 import { Article, Comment } from '../shared/models';
 import {
   ArticleService,

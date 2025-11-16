@@ -10,12 +10,11 @@ import { AuthStore } from 'src/app/shared/store';
 import { ArticleDetailStore } from '../../article-detail.store';
 
 @Component({
-  selector: 'app-comment-form',
-  standalone: true,
-  imports: [FormsModule],
-  templateUrl: './comment-form.component.html',
-  styleUrls: ['./comment-form.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-comment-form',
+    imports: [FormsModule],
+    templateUrl: './comment-form.component.html',
+    styleUrls: ['./comment-form.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CommentFormComponent {
   @Input({ required: true }) slug!: string;

@@ -10,12 +10,11 @@ import { AUTH_MENU, NON_AUTH_MENU } from 'src/app/shared/constants';
 import { AuthStore } from 'src/app/shared/store';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [RouterLink, NgFor, RouterLinkActive, NgIf],
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-header',
+    imports: [RouterLink, NgFor, RouterLinkActive, NgIf],
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
   readonly #authStore = inject(AuthStore);

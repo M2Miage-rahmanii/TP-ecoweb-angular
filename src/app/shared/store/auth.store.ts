@@ -2,8 +2,9 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { OnStoreInit, tapResponse } from '@ngrx/component-store';
+import { OnStoreInit } from '@ngrx/component-store';
 import { switchMap, tap } from 'rxjs';
+import { tapResponse } from '../utils/tap-response.operator';
 import { STORAGE_KEY } from '../constants';
 import { ErrorResponse, User, UserAPIResponse } from '../models';
 import {
@@ -97,13 +98,13 @@ export class AuthStore
     switchMap(() =>
       this.#authService.getCurrentUser().pipe(
         tapResponse(
-          (res) => {
+          (res: UserAPIResponse) => {
             this.#localStorage.setItem(STORAGE_KEY.user, res.user);
             this.patchState({
               user: res.user,
             });
           },
-          (error) => {
+          (error: HttpErrorResponse) => {
             console.error('Get Current User Failed', error);
             this.logout();
           }
@@ -119,13 +120,13 @@ export class AuthStore
       form.disable();
       return this.#authService.updateCurrentUser(form.getRawValue()).pipe(
         tapResponse({
-          next: (res) => {
+          next: (res: UserAPIResponse) => {
             this.#localStorage.setItem(STORAGE_KEY.user, res.user);
             this.patchState({
               user: res.user,
             });
           },
-          error: (error) => {
+          error: (error: HttpErrorResponse) => {
             console.error('error update', error);
           },
           finalize: () => {

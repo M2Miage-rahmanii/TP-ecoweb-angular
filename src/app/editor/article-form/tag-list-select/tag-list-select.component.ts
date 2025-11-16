@@ -4,19 +4,18 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/f
 
 
 @Component({
-  selector: 'app-tag-list-select',
-  standalone: true,
-  imports: [NgFor, FormsModule],
-  templateUrl: './tag-list-select.component.html',
-  styleUrls: ['./tag-list-select.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: TagListSelectComponent,
-      multi: true
-    },
-  ],
+    selector: 'app-tag-list-select',
+    imports: [NgFor, FormsModule],
+    templateUrl: './tag-list-select.component.html',
+    styleUrls: ['./tag-list-select.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: TagListSelectComponent,
+            multi: true
+        },
+    ]
 })
 export class TagListSelectComponent implements ControlValueAccessor {
   tagInput!: string;

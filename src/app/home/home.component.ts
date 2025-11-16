@@ -16,19 +16,18 @@ import { TagsComponent } from './ui/tags/tags.component';
 import { Article } from '../shared/models';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    TagsComponent,
-    FeedToggleComponent,
-    NgIf,
-    ArticleListComponent,
-    PaginationComponent,
-  ],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [provideComponentStore(HomeStore)],
+    selector: 'app-home',
+    imports: [
+        TagsComponent,
+        FeedToggleComponent,
+        NgIf,
+        ArticleListComponent,
+        PaginationComponent,
+    ],
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [provideComponentStore(HomeStore)]
 })
 export default class HomeComponent implements OnInit {
   readonly #homeStore = inject(HomeStore);

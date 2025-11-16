@@ -10,12 +10,11 @@ import {
 import { HomeStore } from '../../home.store';
 
 @Component({
-  selector: 'app-tags',
-  standalone: true,
-  imports: [NgFor],
-  templateUrl: './tags.component.html',
-  styleUrls: ['./tags.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-tags',
+    imports: [NgFor],
+    templateUrl: './tags.component.html',
+    styleUrls: ['./tags.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TagsComponent implements OnInit {
   readonly #homeStore = inject(HomeStore);

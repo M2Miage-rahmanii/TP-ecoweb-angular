@@ -13,13 +13,12 @@ import { ProfileStore } from './profile.store';
 import { ArticleToggleComponent } from './ui/article-toggle/article-toggle.component';
 
 @Component({
-  selector: 'app-profile',
-  standalone: true,
-  imports: [NgIf, RouterOutlet, ArticleToggleComponent],
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [provideComponentStore(ProfileStore)],
+    selector: 'app-profile',
+    imports: [NgIf, RouterOutlet, ArticleToggleComponent],
+    templateUrl: './profile.component.html',
+    styleUrls: ['./profile.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [provideComponentStore(ProfileStore)]
 })
 export default class ProfileComponent {
   readonly #profileStore = inject(ProfileStore);

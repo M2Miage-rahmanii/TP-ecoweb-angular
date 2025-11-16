@@ -17,12 +17,11 @@ import { FormErrorsComponent } from '../shared/ui/form-errors';
 import { TypedFormGroup } from '../shared/utils';
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [FormErrorsComponent, ReactiveFormsModule, RouterLink],
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-login',
+    imports: [FormErrorsComponent, ReactiveFormsModule, RouterLink],
+    templateUrl: './login.component.html',
+    styleUrls: ['./login.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export default class LoginComponent implements OnDestroy {
   readonly #authStore = inject(AuthStore);

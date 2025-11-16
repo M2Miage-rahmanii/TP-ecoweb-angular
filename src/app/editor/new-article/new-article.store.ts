@@ -1,9 +1,10 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { OnStoreInit, tapResponse } from '@ngrx/component-store';
-import { exhaustMap } from 'rxjs';
-import { ErrorResponse } from 'src/app/shared/models';
+import { OnStoreInit } from '@ngrx/component-store';
+import { exhaustMap, switchMap } from 'rxjs';
+import { tapResponse } from 'src/app/shared/utils/tap-response.operator';
+import { Article, ErrorResponse } from 'src/app/shared/models';
 import {
   ArticleService,
   UpsertArticleBodyRequest,

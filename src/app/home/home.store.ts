@@ -1,7 +1,8 @@
 import { ViewportScroller } from '@angular/common';
 import { Injectable, inject } from '@angular/core';
-import { OnStoreInit, tapResponse } from '@ngrx/component-store';
+import { OnStoreInit } from '@ngrx/component-store';
 import { Observable, defer, exhaustMap, switchMap, tap } from 'rxjs';
+import { tapResponse } from '../shared/utils/tap-response.operator';
 import { DEFAULT_LIMIT } from '../shared/constants';
 import { Article, ArticlePagingAPIResponse } from '../shared/models';
 import { ArticleGlobalQueryParams, ArticleService } from '../shared/services';

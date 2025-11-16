@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { getMockedArticle, getSpyHttpClient } from 'src/app/testing.spec';
@@ -9,15 +9,17 @@ describe(ArticleService.name, () => {
   function setup() {
     const spyHttpClient = getSpyHttpClient();
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      providers: [
+    imports: [],
+    providers: [
         ArticleService,
         {
-          provide: HttpClient,
-          useValue: spyHttpClient,
+            provide: HttpClient,
+            useValue: spyHttpClient,
         },
-      ],
-    });
+        provideHttpClient(withInterceptorsFromDi()),
+        provideHttpClientTesting(),
+    ]
+});
 
     const articleService = TestBed.inject(ArticleService);
     return { spyHttpClient, articleService };

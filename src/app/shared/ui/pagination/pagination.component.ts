@@ -12,12 +12,11 @@ import {
 import { DEFAULT_LIMIT } from '../../constants';
 
 @Component({
-  selector: 'app-pagination',
-  standalone: true,
-  imports: [NgFor, NgIf, NgClass],
-  templateUrl: './pagination.component.html',
-  styleUrls: ['./pagination.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-pagination',
+    imports: [NgFor, NgIf, NgClass],
+    templateUrl: './pagination.component.html',
+    styleUrls: ['./pagination.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PaginationComponent {
   @Input({ required: true }) totalCount!: Signal<number>;

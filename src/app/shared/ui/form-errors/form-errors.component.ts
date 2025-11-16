@@ -7,12 +7,11 @@ import {
 import { ErrorResponse } from '../../models';
 
 @Component({
-  selector: 'app-form-errors',
-  standalone: true,
-  imports: [NgFor, NgIf],
-  templateUrl: './form-errors.component.html',
-  styleUrls: ['./form-errors.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-form-errors',
+    imports: [NgFor, NgIf],
+    templateUrl: './form-errors.component.html',
+    styleUrls: ['./form-errors.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormErrorsComponent {
   @Input({required: true}) errorResponse!: Signal<ErrorResponse | null>;

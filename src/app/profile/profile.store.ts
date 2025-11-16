@@ -1,8 +1,9 @@
 import { inject, Injectable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { OnStoreInit, tapResponse } from '@ngrx/component-store';
+import { OnStoreInit } from '@ngrx/component-store';
 import { defer, exhaustMap, switchMap } from 'rxjs';
+import { tapResponse } from '../shared/utils/tap-response.operator';
 import { Profile } from '../shared/models';
 import { ProfileService } from '../shared/services';
 import { ComponentStoreWithSelectors } from '../shared/utils';
@@ -29,13 +30,13 @@ export class ProfileStore
     switchMap((username) =>
       this.#profileService.getProfile(username).pipe(
         tapResponse(
-          (response) => {
+          (response: any) => {
             this.#title.setTitle(`${response.profile.username} - Conduit`);
             this.patchState({
               profile: response.profile,
             });
           },
-          (error) => {
+          (error: any) => {
             console.error('Get Profile Failed', error);
             this.#router.navigate(['/']);
           }
@@ -54,12 +55,12 @@ export class ProfileStore
         }
       }).pipe(
         tapResponse(
-          (response) => {
+          (response: any) => {
             this.patchState({
               profile: response.profile,
             });
           },
-          (error) => {
+          (error: any) => {
             console.error('Toggle Follow User Failed', error);
           }
         )

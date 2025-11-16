@@ -22,23 +22,22 @@ import { CommentFormComponent } from './ui/comment-form/comment-form.component';
 import { CommentListComponent } from './ui/comment-list/comment-list.component';
 
 @Component({
-  selector: 'app-article-detail',
-  standalone: true,
-  imports: [
-    RouterLink,
-    NgIf,
-    NgTemplateOutlet,
-    NgFor,
-    CommentListComponent,
-    CommentFormComponent,
-    DatePipe,
-    NgClass,
-    MarkdownPipe,
-  ],
-  templateUrl: './article-detail.component.html',
-  styleUrls: ['./article-detail.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [provideComponentStore(ArticleDetailStore)],
+    selector: 'app-article-detail',
+    imports: [
+        RouterLink,
+        NgIf,
+        NgTemplateOutlet,
+        NgFor,
+        CommentListComponent,
+        CommentFormComponent,
+        DatePipe,
+        NgClass,
+        MarkdownPipe,
+    ],
+    templateUrl: './article-detail.component.html',
+    styleUrls: ['./article-detail.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [provideComponentStore(ArticleDetailStore)]
 })
 export default class ArticleDetailComponent implements OnInit {
   @Input() slug!: string;

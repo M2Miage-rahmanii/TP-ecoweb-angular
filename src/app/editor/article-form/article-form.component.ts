@@ -14,12 +14,11 @@ import { TypedFormGroup } from 'src/app/shared/utils';
 import { TagListSelectComponent } from './tag-list-select/tag-list-select.component';
 
 @Component({
-  selector: 'app-article-form',
-  standalone: true,
-  imports: [ReactiveFormsModule, TagListSelectComponent, FormErrorsComponent],
-  templateUrl: './article-form.component.html',
-  styleUrls: ['./article-form.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-article-form',
+    imports: [ReactiveFormsModule, TagListSelectComponent, FormErrorsComponent],
+    templateUrl: './article-form.component.html',
+    styleUrls: ['./article-form.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ArticleFormComponent {
   readonly articleForm: TypedFormGroup<UpsertArticleBodyRequest> = new FormGroup({

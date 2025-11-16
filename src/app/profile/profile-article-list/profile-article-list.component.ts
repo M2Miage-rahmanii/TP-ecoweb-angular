@@ -16,13 +16,12 @@ import { injectArticleType } from './profile-article-list.di';
 import { ProfileArticleListStore } from './profile-article-list.store';
 
 @Component({
-  selector: 'app-profile-article-list',
-  standalone: true,
-  imports: [PaginationComponent, ArticleListComponent],
-  templateUrl: './profile-article-list.component.html',
-  styleUrls: ['./profile-article-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [provideComponentStore(ProfileArticleListStore)],
+    selector: 'app-profile-article-list',
+    imports: [PaginationComponent, ArticleListComponent],
+    templateUrl: './profile-article-list.component.html',
+    styleUrls: ['./profile-article-list.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [provideComponentStore(ProfileArticleListStore)]
 })
 export default class ProfileArticleListComponent implements OnInit {
   readonly #route = inject(ActivatedRoute);

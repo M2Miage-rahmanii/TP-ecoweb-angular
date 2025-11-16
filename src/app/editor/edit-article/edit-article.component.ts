@@ -12,13 +12,12 @@ import { ArticleFormComponent } from '../article-form/article-form.component';
 import { EditArticleStore } from './edit-article.store';
 
 @Component({
-  selector: 'app-edit-article',
-  standalone: true,
-  imports: [ArticleFormComponent],
-  templateUrl: './edit-article.component.html',
-  styleUrls: ['./edit-article.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [provideComponentStore(EditArticleStore)],
+    selector: 'app-edit-article',
+    imports: [ArticleFormComponent],
+    templateUrl: './edit-article.component.html',
+    styleUrls: ['./edit-article.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [provideComponentStore(EditArticleStore)]
 })
 export default class EditArticleComponent implements OnInit {
   @Input() slug!: string;

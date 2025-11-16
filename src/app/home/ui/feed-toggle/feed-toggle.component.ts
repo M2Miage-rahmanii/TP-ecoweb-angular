@@ -17,12 +17,11 @@ interface TabItem {
 }
 
 @Component({
-  selector: 'app-feed-toggle',
-  standalone: true,
-  imports: [NgFor, NgClass],
-  templateUrl: './feed-toggle.component.html',
-  styleUrls: ['./feed-toggle.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-feed-toggle',
+    imports: [NgFor, NgClass],
+    templateUrl: './feed-toggle.component.html',
+    styleUrls: ['./feed-toggle.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FeedToggleComponent {
   readonly #authStore = inject(AuthStore);

@@ -9,12 +9,11 @@ import { AuthStore } from 'src/app/shared/store';
 import { ArticleDetailStore } from '../../article-detail.store';
 
 @Component({
-  selector: 'app-comment-list',
-  standalone: true,
-  imports: [NgFor, RouterLink, DatePipe, NgIf],
-  templateUrl: './comment-list.component.html',
-  styleUrls: ['./comment-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-comment-list',
+    imports: [NgFor, RouterLink, DatePipe, NgIf],
+    templateUrl: './comment-list.component.html',
+    styleUrls: ['./comment-list.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CommentListComponent {
   @Input({ required: true }) slug!: string;
