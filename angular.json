@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-conduit-signals:build:production"
+              "buildTarget": "angular-conduit-signals:build:production"
             },
             "development": {
-              "browserTarget": "angular-conduit-signals:build:development"
+              "buildTarget": "angular-conduit-signals:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-conduit-signals:build"
+            "buildTarget": "angular-conduit-signals:build"
           }
         },
         "test": {
