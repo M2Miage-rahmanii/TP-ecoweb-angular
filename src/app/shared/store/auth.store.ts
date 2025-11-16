@@ -4,7 +4,6 @@ import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { OnStoreInit } from '@ngrx/component-store';
 import { switchMap, tap } from 'rxjs';
-import { tapResponse } from '../utils/tap-response.operator';
 import { STORAGE_KEY } from '../constants';
 import { ErrorResponse, User, UserAPIResponse } from '../models';
 import {
@@ -18,6 +17,7 @@ import {
   LocalStorageService,
   TypedFormGroup,
 } from '../utils';
+import { tapResponse } from '../utils/tap-response.operator';
 interface AuthState {
   user: User | null;
   isAuthenticated: boolean;

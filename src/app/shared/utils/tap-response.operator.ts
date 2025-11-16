@@ -1,9 +1,14 @@
-import { Observable } from 'rxjs';
-import { tap, catchError, finalize } from 'rxjs/operators';
-import { throwError } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
+import { catchError, finalize, tap } from 'rxjs/operators';
 
 export function tapResponse<T>(
-  nextFn?: ((value: T) => void) | { next?: (value: T) => void; error?: (error: any) => void; finalize?: () => void },
+  nextFn?:
+    | ((value: T) => void)
+    | {
+        next?: (value: T) => void;
+        error?: (error: any) => void;
+        finalize?: () => void;
+      },
   errorFn?: ((error: any) => void) | null,
   finalizeFn?: () => void
 ) {
@@ -38,4 +43,3 @@ export function tapResponse<T>(
     return source;
   };
 }
-

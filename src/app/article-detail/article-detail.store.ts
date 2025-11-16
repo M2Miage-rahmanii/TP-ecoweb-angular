@@ -3,14 +3,14 @@ import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { OnStoreInit } from '@ngrx/component-store';
 import { defer, exhaustMap, switchMap } from 'rxjs';
-import { tapResponse } from '../shared/utils/tap-response.operator';
 import { Article, Comment } from '../shared/models';
 import {
   ArticleService,
   InsertCommentBodyRequest,
-  ProfileService
+  ProfileService,
 } from '../shared/services';
 import { ComponentStoreWithSelectors } from '../shared/utils';
+import { tapResponse } from '../shared/utils/tap-response.operator';
 
 interface ArticleDetailState {
   article: Article | null;

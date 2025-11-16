@@ -2,9 +2,8 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { OnStoreInit } from '@ngrx/component-store';
-import { exhaustMap, switchMap } from 'rxjs';
-import { tapResponse } from 'src/app/shared/utils/tap-response.operator';
-import { Article, ErrorResponse } from 'src/app/shared/models';
+import { exhaustMap } from 'rxjs';
+import { ErrorResponse } from 'src/app/shared/models';
 import {
   ArticleService,
   UpsertArticleBodyRequest,
@@ -14,6 +13,7 @@ import {
   ComponentStoreWithSelectors,
   TypedFormGroup,
 } from 'src/app/shared/utils';
+import { tapResponse } from 'src/app/shared/utils/tap-response.operator';
 
 interface NewArticleState {
   errorResponse: ErrorResponse | null;

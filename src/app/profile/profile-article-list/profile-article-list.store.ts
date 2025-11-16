@@ -2,11 +2,11 @@ import { ViewportScroller } from '@angular/common';
 import { inject, Injectable } from '@angular/core';
 import { OnStoreInit } from '@ngrx/component-store';
 import { defer, exhaustMap, switchMap, tap } from 'rxjs';
-import { tapResponse } from '../../shared/utils/tap-response.operator';
 import { Article } from 'src/app/shared/models';
 import { ArticleService } from 'src/app/shared/services';
 import { ComponentStoreWithSelectors } from 'src/app/shared/utils';
-import { ArticleType, ARTICLE_TYPE } from './profile-article-list.di';
+import { tapResponse } from '../../shared/utils/tap-response.operator';
+import { ARTICLE_TYPE, ArticleType } from './profile-article-list.di';
 
 interface ProfileArticleListState {
   articleList: Article[];
@@ -39,15 +39,21 @@ export class ProfileArticleListStore
     articleType: ArticleType;
     offset: number;
   }>(
-    tap((request: { username: string; articleType: ArticleType; offset: number }) => {
-      this.patchState({
-        username: request.username,
-        articleType: request.articleType,
-        currentOffset: request.offset,
-      });
-      this.#viewPort.scrollToPosition([0, 0]);
-      this.#refreshPage();
-    })
+    tap(
+      (request: {
+        username: string;
+        articleType: ArticleType;
+        offset: number;
+      }) => {
+        this.patchState({
+          username: request.username,
+          articleType: request.articleType,
+          currentOffset: request.offset,
+        });
+        this.#viewPort.scrollToPosition([0, 0]);
+        this.#refreshPage();
+      }
+    )
   );
 
   readonly #refreshPage = this.effect<void>(
