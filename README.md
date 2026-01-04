@@ -47,77 +47,77 @@ Les points seront ensuite calculer et une note sera donner en fonction du classe
 
 ## Bonnes pratiques :
 
-Détails des bonnes pratiques ici : [https://github.com/cnumr/best-practices/tree/main](https://github.com/cnumr/best-practices/tree/main)
+Détails des bonnes pratiques ici : [https://rweb.greenit.fr/fr/fiches](https://rweb.greenit.fr/fr/fiches)
 
 |     | Bonnes pratiques                                                                       | Priorité | Mise en oeuvre | Impact écologique | Nombre de points |
 | --- | -------------------------------------------------------------------------------------- | -------- | -------------- | ----------------- | ---------------- |
-| 1   | Optimiser le parcours utilisateur                                                      | 5        | 4              | 5                 | 4,67             |
-| 2   | Préférer la saisie assistée à l'autocomplétion                                         | 3        | 3              | 3                 | 3,00             |
-| 3   | Favoriser un design simple, épuré, adapté au web                                       | 4        | 3              | 3                 | 3,33             |
-| 4   | Privilégier une approche "mobile first", à défaut un chargement adaptatif              | 4        | 4              | 5                 | 4,33             |
-| 5   | Respecter le principe de navigation rapide dans l’historique                           | 3        | 4              | 3                 | 3,33             |
-| 6   | Limiter le nombre de requêtes HTTP                                                     | 4        | 3              | 4                 | 3,67             |
-| 7   | Stocker les données statiques localement                                               | 4        | 3              | 4                 | 3,67             |
-| 8   | Favoriser les pages statiques                                                          | 4        | 3              | 5                 | 4,00             |
-| 9   | Remplacer les boutons officiels de partage des réseaux sociaux                         | 4        | 4              | 4                 | 4,00             |
-| 10  | Découper les CSS                                                                       | 4        | 4              | 4                 | 4,00             |
-| 11  | Limiter le nombre de CSS                                                               | 4        | 4              | 4                 | 4,00             |
-| 12  | Préférer les CSS aux images                                                            | 4        | 3              | 4                 | 3,67             |
-| 13  | Écrire des sélecteurs CSS efficaces                                                    | 3        | 3              | 3                 | 3,00             |
-| 14  | Grouper les déclarations CSS similaires                                                | 3        | 3              | 2                 | 2,67             |
-| 15  | Utiliser les notations CSS abrégées                                                    | 2        | 3              | 2                 | 2,33             |
-| 16  | Fournir une CSS print                                                                  | 3        | 4              | 3                 | 3,33             |
-| 17  | Favoriser les polices standards                                                        | 4        | 3              | 4                 | 3,67             |
-| 18  | Préférer les glyphs aux images                                                         | 4        | 3              | 4                 | 3,67             |
-| 19  | Valider les pages auprès du W3C                                                        | 3        | 5              | 2                 | 3,33             |
-| 20  | Externaliser les CSS et JavaScript                                                     | 4        | 4              | 4                 | 4,00             |
-| 21  | Ne pas redimensionner les images coté navigateur                                       | 4        | 4              | 4                 | 4,00             |
-| 22  | Éviter d'utiliser des images matricielles pour l'interface                             | 4        | 4              | 4                 | 4,00             |
-| 23  | Optimiser les images vectorielles                                                      | 4        | 4              | 4                 | 4,00             |
-| 24  | Utiliser le chargement paresseux                                                       | 4        | 4              | 5                 | 4,33             |
-| 25  | Utiliser le rechargement partiel d'une zone de contenu                                 | 4        | 3              | 4                 | 3,67             |
-| 26  | Éviter les animations JavaScript / CSS                                                 | 4        | 3              | 5                 | 4,00             |
-| 27  | N'utilisez que les portions indispensables des librairies JavaScript et frameworks CSS | 4        | 4              | 4                 | 4,00             |
-| 28  | Ne pas faire de modification du DOM lorsqu’on le traverse                              | 4        | 4              | 4                 | 4,00             |
-| 29  | Rendre les éléments du DOM invisibles lors de leur modification                        | 3        | 4              | 4                 | 3,67             |
-| 30  | Réduire au maximum le repaint (appearence) et le reflow (layout)                       | 4        | 4              | 4                 | 4,00             |
-| 31  | Utiliser la délégation d'évènements                                                    | 3        | 3              | 4                 | 3,33             |
-| 32  | Modifier plusieurs propriétés CSS en 1 seule fois                                      | 3        | 4              | 2                 | 3,00             |
-| 33  | Mettre en cache les objets souvent accédés en JavaScript                               | 4        | 3              | 4                 | 3,67             |
-| 34  | Réduire les accès au DOM via JavaScript                                                | 3        | 3              | 3                 | 3,00             |
-| 35  | Minifier les fichiers CSS, JavaScript, HTML et SVG                                     | 4        | 3              | 4                 | 3,67             |
-| 36  | Compresser les fichiers CSS, JavaScript, HTML et SVG                                   | 4        | 3              | 4                 | 3,67             |
-| 37  | Combiner les fichiers CSS et JavaScript                                                | 4        | 3              | 4                 | 3,67             |
-| 38  | Optimiser les images                                                                   | 4        | 3              | 4                 | 3,67             |
-| 39  | Optimiser la taille des cookies                                                        | 3        | 4              | 3                 | 3,33             |
-| 40  | Favoriser HSTS Preload list aux redirections 301                                       | 4        | 3              | 4                 | 3,67             |
-| 41  | Mettre en cache les réponses Ajax                                                      | 3        | 2              | 4                 | 3,00             |
-| 42  | Adapter les sons aux contextes d'écoute                                                | 2        | 2              | 3                 | 2,33             |
-| 43  | Adapter les textes au web                                                              | 3        | 3              | 3                 | 3,00             |
-| 44  | Adapter les vidéos aux contextes de visualisation                                      | 3        | 2              | 3                 | 2,67             |
-| 45  | Limiter les outils d'analytics et les données collectées                               | 4        | 3              | 4                 | 3,67             |
-| 46  | Limiter l'utilisation des GIFs animés                                                  | 3        | 3              | 3                 | 3,00             |
-| 47  | Éviter la lecture et le chargement automatique des vidéos et des sons                  | 4        | 3              | 4                 | 3,67             |
-| 48  | Utiliser les compartiments CSS                                                         | 3        | 2              | 4                 | 3,00             |
-| 49  | Fournir une alternative textuelle aux contenus multimédias                             | 4        | 3              | 5                 | 4,00             |
-| 50  | Économiser de la bande passante grace à un ServiceWorker                               | 4        | 3              | 4                 | 3,67             |
-| 51  | Mettre en place un sitemap efficient                                                   | 2        | 3              | 2                 | 2,00             |
-| 52  | Assurer la compatibilité avec les plus anciens appareils et logiciels du parc          | 4        | 3              | 5                 | 4,00             |
-| 53  | Réduire le volume de données stockées au strict nécessaire                             | 4        | 4              | 4                 | 4,00             |
-| 54  | Limiter le recours aux canvas                                                          | 3        | 4              | 4                 | 3,67             |
-| 55  | S'assurer que les parcours utilisateurs permettent de réaliser leur action prévue      | 4        | 4              | 4                 | 4,00             |
-| 56  | Avoir un titre de page et une metadescription pertinents avec le contenu de la page    | 4        | 4              | 4                 | 4,00             |
-| 57  | Ne charger des données/du code que lorsqu'elles sont/il est nécessaire                 | 4        | 3              | 5                 | 4,00             |
-| 58  | Préférer une PWA à une application mobile native similaire au site web                 | 3        | 3              | 3                 | 3,00             |
-| 59  | Éviter les temps de blocages par des traitements JavaScript trop longs                 | 4        | 3              | 4                 | 3,67             |
-| 60  | Mettre en place une architecture élastique                                             | 3        | 3              | 4                 | 3,33             |
-| 61  | Limiter le nombre d'appels aux API HTTP                                                | 4        | 3              | 5                 | 4,00             |
-| 62  | Limiter le recours aux carrousels                                                      | 4        | 4              | 4                 | 4,00             |
-| 63  | Mettre en place un "Circuit breaker"                                                   | 2        | 2              | 2                 | 2,00             |
-| 64  | Favoriser le "Request collapsing"                                                      | 2        | 2              | 2                 | 2,00             |
-| 65  | Préférer la pagination au défilement infini                                            | 3        | 4              | 3                 | 3,33             |
-| 66  | Sécuriser l'accès à l'administration                                                   | 2        | 2              | 2                 | 2,00             |
-| 67  | Ne pas afficher les documents à l'intérieur des pages                                  | 3        | 1              | 4                 | 2,67             |
+| [RWEB 0005](https://rweb.greenit.fr/fr/fiches/RWEB_0005-optimiser-le-parcours-utilisateur) | Optimiser le parcours utilisateur | 5 | 4 | 5 | 4,67 |
+| [RWEB 0014](https://rweb.greenit.fr/fr/fiches/RWEB_0014-preferer-la-saisie-assistee-a-l-autocompletion) | Préférer la saisie assistée à l'autocomplétion | 3 | 3 | 3 | 3,00 |
+| [RWEB 0012](https://rweb.greenit.fr/fr/fiches/RWEB_0012-favoriser-un-design-simple-epure-adapte-au-web) | Favoriser un design simple, épuré, adapté au web | 4 | 3 | 3 | 3,33 |
+| [RWEB 0004](https://rweb.greenit.fr/fr/fiches/RWEB_0004-privilegier-une-approche-mobile-first-a-defaut-un-chargement-adaptatif) | Privilégier une approche mobile first | 4 | 4 | 5 | 4,33 |
+| [RWEB 0008](https://rweb.greenit.fr/fr/fiches/RWEB_0008-respecter-le-principe-de-navigation-rapide-dans-lhistorique) | Navigation rapide dans l’historique | 3 | 4 | 3 | 3,33 |
+| [RWEB 0047](https://rweb.greenit.fr/fr/fiches/RWEB_0047-limiter-le-nombre-de-requetes-http) | Limiter le nombre de requêtes HTTP | 4 | 3 | 4 | 3,67 |
+| [RWEB 0064](https://rweb.greenit.fr/fr/fiches/RWEB_0064-stocker-les-donnees-statiques-localement) | Stocker les données statiques localement | 4 | 3 | 4 | 3,67 |
+| [RWEB 0018](https://rweb.greenit.fr/fr/fiches/RWEB_0018-favoriser-les-pages-statiques) | Favoriser les pages statiques | 4 | 3 | 5 | 4,00 |
+| [RWEB 0059](https://rweb.greenit.fr/fr/fiches/RWEB_0059-remplacer-les-boutons-officiels-de-partage-des-reseaux-sociaux) | Remplacer les boutons de partage sociaux | 4 | 4 | 4 | 4,00 |
+| [RWEB 0036](https://rweb.greenit.fr/fr/fiches/RWEB_0036-decouper-les-css) | Découper les CSS | 4 | 4 | 4 | 4,00 |
+| [RWEB 0035](https://rweb.greenit.fr/fr/fiches/RWEB_0035-limiter-le-nombre-de-css) | Limiter le nombre de CSS | 4 | 4 | 4 | 4,00 |
+| [RWEB 0037](https://rweb.greenit.fr/fr/fiches/RWEB_0037-preferer-les-css-aux-images) | Préférer les CSS aux images | 4 | 3 | 4 | 3,67 |
+| [RWEB 0041](https://rweb.greenit.fr/fr/fiches/RWEB_0041-ecrire-des-selecteurs-css-efficaces) | Écrire des sélecteurs CSS efficaces | 3 | 3 | 3 | 3,00 |
+| [RWEB 0119](https://rweb.greenit.fr/fr/fiches/RWEB_0119-grouper-les-declarations-css-similaires) | Grouper les déclarations CSS similaires | 3 | 3 | 2 | 2,67 |
+| [RWEB 0118](https://rweb.greenit.fr/fr/fiches/RWEB_0118-utiliser-les-notations-css-abregees) | Utiliser les notations CSS abrégées | 2 | 3 | 2 | 2,33 |
+| [RWEB 0031](https://rweb.greenit.fr/fr/fiches/RWEB_0031-fournir-une-css-print) | Fournir une CSS print | 3 | 4 | 3 | 3,33 |
+| [RWEB 0032](https://rweb.greenit.fr/fr/fiches/RWEB_0032-favoriser-les-polices-standards) | Favoriser les polices standards | 4 | 3 | 4 | 3,67 |
+| [RWEB 0050](https://rweb.greenit.fr/fr/fiches/RWEB_0050-preferer-les-glyphes-aux-images) | Préférer les glyphs aux images | 4 | 3 | 4 | 3,67 |
+| [RWEB 0061](https://rweb.greenit.fr/fr/fiches/RWEB_0061-valider-les-pages-aupres-du-w3c) | Valider les pages auprès du W3C | 3 | 5 | 2 | 3,33 |
+| [RWEB 0042](https://rweb.greenit.fr/fr/fiches/RWEB_0042-externaliser-les-css-et-javascript) | Externaliser les CSS et JavaScript | 4 | 4 | 4 | 4,00 |
+| [RWEB 0048](https://rweb.greenit.fr/fr/fiches/RWEB_0048-ne-pas-redimensionner-les-images-cote-navigateur) | Ne pas redimensionner les images côté navigateur | 4 | 4 | 4 | 4,00 |
+| [RWEB 0038](https://rweb.greenit.fr/fr/fiches/RWEB_0038-eviter-d-utiliser-des-images-matricielles-pour-l-interface) | Éviter les images matricielles pour l’interface | 4 | 4 | 4 | 4,00 |
+| [RWEB 0100](https://rweb.greenit.fr/fr/fiches/RWEB_0100-optimiser-les-images-vectorielles) | Optimiser les images vectorielles | 4 | 4 | 4 | 4,00 |
+| [RWEB 0051](https://rweb.greenit.fr/fr/fiches/RWEB_0051-utiliser-le-chargement-paresseux) | Utiliser le chargement paresseux | 4 | 4 | 5 | 4,33 |
+| [RWEB 0034](https://rweb.greenit.fr/fr/fiches/RWEB_0034-utiliser-le-rechargement-partiel-d-une-zone-de-contenu) | Rechargement partiel d’une zone de contenu | 4 | 3 | 4 | 3,67 |
+| [RWEB 0009](https://rweb.greenit.fr/fr/fiches/RWEB_0009-eviter-les-animations-javascript-css) | Éviter les animations JavaScript / CSS | 4 | 3 | 5 | 4,00 |
+| [RWEB 0015](https://rweb.greenit.fr/fr/fiches/RWEB_0015-n-utilisez-que-les-portions-indispensables-des-bibliotheques-javascript-et-frameworks-css) | N’utilisez que les portions indispensables des bibliothèques JavaScript et frameworks CSS | 5 | 4 | 4 | 4,33 |
+| [RWEB 0044](https://rweb.greenit.fr/fr/fiches/RWEB_0044-ne-pas-faire-de-modification-du-dom-lorsquon-le-traverse) | Limiter le nombre de modifications du DOM lorsqu’on le traverse | 4 | 4 | 4 | 4,33 |
+| [RWEB 0045](https://rweb.greenit.fr/fr/fiches/RWEB_0045-rendre-les-elements-du-dom-invisibles-lors-de-leur-modification) | Rendre les éléments du DOM invisibles lors de leur modification | 3 | 4 | 4 | 3,67 |
+| [RWEB 0052](https://rweb.greenit.fr/fr/fiches/RWEB_0052-reduire-au-maximum-le-repaint-appearence-et-le-reflow-layout) | Réduire repaint et reflow | 4 | 4 | 4 | 4,00 |
+| [RWEB 0056](https://rweb.greenit.fr/fr/fiches/RWEB_0056-utiliser-la-delegation-d-evenements) | Délégation d’évènements | 3 | 3 | 4 | 3,33 |
+| [RWEB 0040](https://rweb.greenit.fr/fr/fiches/RWEB_0040-modifier-plusieurs-proprietes-css-en-1-seule-fois) | Modifier plusieurs propriétés CSS en une fois | 3 | 4 | 2 | 3,00 |
+| [RWEB 0054](https://rweb.greenit.fr/fr/fiches/RWEB_0054-mettre-en-cache-les-objets-souvent-accedes-en-javascript) | Mettre en cache les objets JavaScript | 4 | 3 | 4 | 3,67 |
+| [RWEB 0057](https://rweb.greenit.fr/fr/fiches/RWEB_0057-reduire-les-acces-au-dom-via-javascript) | Réduire les accès au DOM | 3 | 3 | 3 | 3,00 |
+| [RWEB 0077](https://rweb.greenit.fr/fr/fiches/RWEB_0077-minifier-les-fichiers-css-javascript-html-et-svg) | Minifier les fichiers | 4 | 3 | 4 | 3,67 |
+| [RWEB 0076](https://rweb.greenit.fr/fr/fiches/RWEB_0076-compresser-les-fichiers-css-javascript-html-et-svg) | Compresser les fichiers | 4 | 3 | 4 | 3,67 |
+| [RWEB 0078](https://rweb.greenit.fr/fr/fiches/RWEB_0078-combiner-les-fichiers-css-et-javascript) | Combiner les fichiers CSS / JS | 4 | 3 | 4 | 3,67 |
+| [RWEB 0049](https://rweb.greenit.fr/fr/fiches/RWEB_0049-optimiser-les-images) | Optimiser les images | 4 | 3 | 4 | 3,67 |
+| [RWEB 0062](https://rweb.greenit.fr/fr/fiches/RWEB_0062-optimiser-la-taille-des-cookies) | Optimiser la taille des cookies | 3 | 4 | 3 | 3,33 |
+| [RWEB 0084](https://rweb.greenit.fr/fr/fiches/RWEB_0084-favoriser-hsts-preload-list-aux-redirections-301) | Favoriser HSTS preload | 4 | 3 | 4 | 3,67 |
+| [RWEB 0072](https://rweb.greenit.fr/fr/fiches/RWEB_0072-mettre-en-cache-les-reponses-ajax) | Mettre en cache les réponses Ajax | 3 | 2 | 4 | 3,00 |
+| [RWEB 0105](https://rweb.greenit.fr/fr/fiches/RWEB_0105-adapter-les-sons-aux-contextes-d-ecoute) | Adapter les sons aux contextes d’écoute | 2 | 2 | 3 | 2,33 |
+| [RWEB 0110](https://rweb.greenit.fr/fr/fiches/RWEB_0110-adapter-les-textes-au-web) | Adapter les textes au web | 3 | 3 | 3 | 3,00 |
+| [RWEB 0107](https://rweb.greenit.fr/fr/fiches/RWEB_0107-adapter-les-videos-aux-contextes-de-visualisation) | Adapter les vidéos aux contextes de visualisation | 3 | 2 | 3 | 2,67 |
+| [RWEB 0111](https://rweb.greenit.fr/fr/fiches/RWEB_0111-limiter-les-outils-d-analytics-et-les-donnees-collectees) | Limiter les outils d’analytics | 4 | 3 | 4 | 3,67 |
+| [RWEB 0099](https://rweb.greenit.fr/fr/fiches/RWEB_0099-limiter-l-utilisation-des-gifs-animes) | Limiter les GIFs animés | 3 | 3 | 3 | 3,00 |
+| [RWEB 0106](https://rweb.greenit.fr/fr/fiches/RWEB_0106-eviter-la-lecture-et-le-chargement-automatique-des-videos-et-des-sons) | Éviter la lecture et le chargement automatique des vidéos et des sons | 4 | 3 | 4 | 3,67 |
+| [RWEB 0039](https://rweb.greenit.fr/fr/fiches/RWEB_0039-utiliser-les-compartiments-css) | Utiliser les compartiments CSS | 3 | 2 | 4 | 3,00 |
+| [RWEB 0030](https://rweb.greenit.fr/fr/fiches/RWEB_0030-fournir-une-alternative-textuelle-aux-contenus-multimedias) | Fournir une alternative textuelle | 4 | 3 | 5 | 4,00 |
+| [RWEB 0060](https://rweb.greenit.fr/fr/fiches/RWEB_0060-economiser-de-la-bande-passante-grace-a-un-serviceworker) | Service Worker pour économiser la bande passante | 4 | 3 | 4 | 3,67 |
+| [RWEB 0090](https://rweb.greenit.fr/fr/fiches/RWEB_0090-mettre-en-place-un-sitemap-efficient) | Mettre en place un sitemap efficient | 2 | 3 | 2 | 2,00 |
+| [RWEB 0058](https://rweb.greenit.fr/fr/fiches/RWEB_0058-assurer-la-compatibilite-avec-les-plus-anciens-appareils-et-logiciels-du-parc) | Compatibilité anciens appareils | 4 | 3 | 5 | 4,00 |
+| [RWEB 0023](https://rweb.greenit.fr/fr/fiches/RWEB_0023-reduire-le-volume-de-donnees-stockees-au-strict-necessaire) | Réduire le volume de données stockées | 4 | 4 | 4 | 4,00 |
+| [RWEB 0055](https://rweb.greenit.fr/fr/fiches/RWEB_0055-limiter-le-recours-aux-canvas) | Limiter le recours aux canvas | 3 | 4 | 4 | 3,67 |
+| [RWEB 0006](https://rweb.greenit.fr/fr/fiches/RWEB_0006-s-assurer-que-les-parcours-utilisateurs-permettent-de-realiser-leur-action-prevue) | S'assurer de la complétion des parcours utilisateurs | 4 | 4 | 4 | 4,00 |
+| [RWEB 0011](https://rweb.greenit.fr/fr/fiches/RWEB_0011-avoir-un-titre-de-page-et-une-metadescription-pertinents-avec-le-contenu-de-la-page) | Titre de page et metadescription pertinents | 4 | 4 | 4 | 4,00 |
+| [RWEB 0046](https://rweb.greenit.fr/fr/fiches/RWEB_0046-ne-charger-des-donneesdu-code-que-lorsqu-elles-sontil-est-necessaire) | Charger uniquement le nécessaire | 4 | 3 | 5 | 4,00 |
+| [RWEB 0019](https://rweb.greenit.fr/fr/fiches/RWEB_0019-preferer-une-pwa-a-une-application-mobile-native-similaire-au-site-web) | Préférer une PWA à une app native | 3 | 3 | 3 | 3,00 |
+| [RWEB 0053](https://rweb.greenit.fr/fr/fiches/RWEB_0053-eviter-les-temps-de-blocages-par-des-traitements-javascript-trop-longs) | Éviter les temps de blocage JavaScript | 4 | 3 | 4 | 3,67 |
+| [RWEB 0027](https://rweb.greenit.fr/fr/fiches/RWEB_0027-mettre-en-place-une-architecture-elastique) | Mettre en place une architecture élastique | 3 | 3 | 4 | 3,33 |
+| [RWEB 0021](https://rweb.greenit.fr/fr/fiches/RWEB_0021-limiter-le-nombre-d-appels-aux-api-http) | Limiter les appels API HTTP | 4 | 3 | 5 | 4,00 |
+| [RWEB 0010](https://rweb.greenit.fr/fr/fiches/RWEB_0010-limiter-le-recours-aux-carrousels) | Limiter le recours aux carrousels | 4 | 4 | 4 | 4,00 |
+| [RWEB 0026](https://rweb.greenit.fr/fr/fiches/RWEB_0026-mettre-en-place-un-circuit-breaker) | Circuit breaker | 2 | 2 | 2 | 2,00 |
+| [RWEB 0025](https://rweb.greenit.fr/fr/fiches/RWEB_0025-favoriser-le-request-collapsing) | Request collapsing | 2 | 2 | 2 | 2,00 |
+| [RWEB 0013](https://rweb.greenit.fr/fr/fiches/RWEB_0013-preferer-la-pagination-au-defilement-infini) | Préférer la pagination au scroll infini | 3 | 4 | 3 | 3,33 |
+| [RWEB 0117](https://rweb.greenit.fr/fr/fiches/RWEB_0117-securiser-l-acces-a-l-administration) | Sécuriser l’accès à l’administration | 2 | 2 | 2 | 2,00 |
+| [RWEB 0033](https://rweb.greenit.fr/fr/fiches/RWEB_0033-ne-pas-afficher-les-documents-a-l-interieur-des-pages) | Ne pas afficher les documents dans les pages | 3 | 1 | 4 | 2,67 |
 
 ## Barême
 
