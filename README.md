@@ -125,4 +125,4 @@ Détails des bonnes pratiques ici : [https://rweb.greenit.fr/fr/fiches](https://
 | ----- | ---- | ----------- |
 | Note classement | /16 | Le 1er binome à 16, le 2eme 15 etc. **Si ça ne compile pas : dernier du classement** |
 | Site utilisable |	/2 | Il faut que le site reste utilisable (Il peut y avoir une ou deux fonctionnalités inutilisable mais le site dans son ensemble doit le rester) |	
-| Respect des consignes |	/2 | Commit clair, fork bien réalisé etc.	|	
+| Respect des consignes |	/1 | Commit clair, fork bien réalisé etc.	|	
