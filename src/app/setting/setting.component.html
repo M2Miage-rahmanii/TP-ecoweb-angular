@@ -1,7 +1,11 @@
 <div class="setting">
   <h1>Your Settings</h1>
-
   <form [formGroup]="settingForm" (ngSubmit)="submit()" class="setting-form">
+    <button
+      routerLink = "/editor"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >créer un nouvel article</button>
     <input
       type="text"
       formControlName="image"

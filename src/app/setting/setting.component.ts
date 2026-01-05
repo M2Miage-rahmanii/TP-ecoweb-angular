@@ -6,9 +6,10 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { UpdateCurrentUserBodyRequest } from '../shared/services';
 import { AuthStore } from '../shared/store';
 import { TypedFormGroup } from '../shared/utils';
+import {RouterLink, RouterLinkActive} from "@angular/router";
 @Component({
     selector: 'app-setting',
-    imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink, RouterLinkActive],
     templateUrl: './setting.component.html',
     styleUrls: ['./setting.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush

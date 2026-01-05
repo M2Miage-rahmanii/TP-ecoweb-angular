@@ -25,13 +25,8 @@ export const AUTH_MENU: NavBarMenu[] = [
     title: 'Home',
   },
   {
-    url: 'editor',
-    title: 'New Article',
-    icon: 'fa-solid fa-pen-to-square',
-  },
-  {
     url: 'settings',
-    title: 'Settings',
+    title: 'Settings/New article',
     icon: 'fa-solid fa-gear',
   },
 ];
