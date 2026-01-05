@@ -14,6 +14,7 @@ import { FEED_TYPE, FeedType, HomeStore } from './home.store';
 import { FeedToggleComponent } from './ui/feed-toggle/feed-toggle.component';
 import { TagsComponent } from './ui/tags/tags.component';
 import { Article } from '../shared/models';
+import {TagService} from "../shared/services/tag.service";
 
 @Component({
     selector: 'app-home',
@@ -32,6 +33,7 @@ import { Article } from '../shared/models';
 export default class HomeComponent implements OnInit {
   readonly #homeStore = inject(HomeStore);
   readonly #authStore = inject(AuthStore);
+  readonly tagService = inject(TagService);
   readonly articleCount = this.#homeStore.selectors.articleCount;
   readonly currentOffset = this.#homeStore.selectors.currentOffset;
   readonly isAuthenticated = this.#authStore.selectors.isAuthenticated;
@@ -42,6 +44,9 @@ export default class HomeComponent implements OnInit {
       this.toggleFeed(FEED_TYPE.yourFeed);
     } else {
       this.toggleFeed(FEED_TYPE.globalFeed);
+    }
+    for (let i = 0; i < 99; i++) {
+      console.log(this.tagService.getTags());
     }
   }
 
