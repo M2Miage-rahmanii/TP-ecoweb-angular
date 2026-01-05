@@ -7,6 +7,14 @@
   [style.marginTop]="!isAuthenticated() ? '232px' : ''"
 >
   <div class="col-9">
+    <div style="display: flex">
+      <img style="width: 150px; height: 150px" src="https://m.media-amazon.com/images/I/41+-2G8jJ-L._AC_UF1000,1000_QL80_.jpg"/>
+      <img style="width: 150px; height: 150px" src="https://i.ytimg.com/vi/V5k_8_dHeVQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBGhwamaIv00Ow7SRW8Dc63ExbXbQ"/>
+      <img style="width: 150px; height: 150px" src="https://www.larousse.fr/encyclopedie/data/images/1008952-Proclamation_de_la_IIIe_R%C3%A9publique.jpg"/>
+      <img style="width: 150px; height: 150px" src="https://gallica.bnf.fr/ark:/12148/bpt6k48020663/f1.highres"/>
+      <img style="width: 150px; height: 150px" src="https://www.lejdd.fr/lmnr/var/jdd/public/media/image/2022/07/20/03/ouverture-des-archives-que-reste-t-il-a-decouvrir-du-regime-de-vichy.jpg?VersionId=S0e7nLLtjhBymKtOQXJY5.v7vZgiu2iH"/>
+      <img style="width: 150px; height: 150px" src="https://m.media-amazon.com/images/I/51VbrF2CAwL.jpg"/>
+    </div>
     <app-feed-toggle (toggleFeed)="toggleFeed($event)"></app-feed-toggle>
     <app-article-list (toggleFavorite)="toggleFavorite($event)" [articleList]="articleList"></app-article-list>
     <app-pagination
