@@ -7,7 +7,7 @@ interface NavBarMenu {
 export const NON_AUTH_MENU: NavBarMenu[] = [
   {
     url: '',
-    title: 'Home',
+    title: 'Retour à accueil principal',
   },
   {
     url: 'login',
@@ -22,11 +22,11 @@ export const NON_AUTH_MENU: NavBarMenu[] = [
 export const AUTH_MENU: NavBarMenu[] = [
   {
     url: '',
-    title: 'Home',
+    title: 'Retour à accueil principal',
   },
   {
     url: 'settings',
-    title: 'Settings/New article',
+    title: 'Configuration de votre compte/Création d un nouvel article',
     icon: 'fa-solid fa-gear',
   },
 ];
