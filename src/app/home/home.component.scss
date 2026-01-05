@@ -18,3 +18,37 @@
     font-weight: 300 !important;
   }
 }
+
+.side-gifs {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+  animation: bounce 1s infinite alternate;
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
